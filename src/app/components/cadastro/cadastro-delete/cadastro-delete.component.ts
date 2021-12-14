@@ -3,7 +3,6 @@ import { CadastroService } from '../cadastro.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Cadastro } from '../cadastro.model';
 
-
 @Component({
   selector: 'app-cadastro-delete',
   templateUrl: './cadastro-delete.component.html',
@@ -13,7 +12,10 @@ export class CadastroDeleteComponent implements OnInit {
 
   cadastro: Cadastro;
 
-  constructor(private cadastroService: CadastroService, private router: Router, private route: ActivatedRoute) {}
+  constructor(private cadastroService: CadastroService, 
+    private router: Router, 
+    private route: ActivatedRoute
+) {}
 
   ngOnInit(): void {
     const id = +this.route.snapshot.paramMap.get('id');

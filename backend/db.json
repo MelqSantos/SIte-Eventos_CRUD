@@ -1,7 +1,18 @@
 {
     "login": [{
-        "id": 1,
-        "usuario": "Melqui Santos",
-        "senha": "admin123"
-    }]
+            "id": 1,
+            "usuario": "Melqui Santos",
+            "senha": "admin123"
+        },
+        {
+            "id": 2,
+            "usuario": "João da Silva",
+            "senha": "123456"
+        },
+        {
+            "id": 3,
+            "usuario": "Marcos Alves",
+            "senha": "morenoJamba"
+        }
+    ]
 }
