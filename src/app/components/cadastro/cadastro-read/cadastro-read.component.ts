@@ -10,10 +10,10 @@ import { CadastroService } from '../cadastro.service';
 export class CadastroReadComponent implements OnInit {
 
   cadastros: Cadastro[]
-  displayedColumns = ['id', 'email', 'cpf', 'nome', 'dataNasc', 'telefone', 'action'];
+  displayedColumns = ['id', 'usuario', 'senha', 'action'];
 
+  constructor(private cadastroService: CadastroService) {}
 
-  constructor(private cadastroService: CadastroService) { }
 
   ngOnInit(): void {
     this.cadastroService.read().subscribe(cadastros => {

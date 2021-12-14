@@ -26,7 +26,7 @@ export class CadastroUpdateComponent implements OnInit {
 
   updateCadastro(): void{
     this.cadastroService.updateCadastro(this.cadastro).subscribe(() => {
-      this.cadastroService.showMessege('O usuário foi atualizado')
+      this.cadastroService.showMessage('O usuário foi atualizado')
       this.router.navigate(["/cadastro/tabela"]);
     });
   }
